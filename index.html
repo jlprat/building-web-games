@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Building Web Games - Glades and Shadows</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon; charset=binary">
+
+    <meta name="description"
+          content="This talk will focus on what we could achieve with HTML5 that was not doable some years ago, and at the same time what is still missing and can't be done with HTML5. All of this, in the area of Game Development for both Mobile and Desktop.">
+    <meta name="author" content="Josep Prat">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/gd.css"/>
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div id="gdSlides" class="reveal">
+
+    <div class="badge"></div>
+
+    <div class="slides">
+        <section>
+            <div class="logo"></div>
+            <h1 class="headline">Building Web Games</h1>
+            <h2>Glades and <span class="shadow">Shadows</span></h2>
+            <footer>
+                <p class="author">
+                    <small>Apps World | 2016/04/21 | Josep Prat | GameDuell GmbH | <a href="http://twitter.com/jlprat">@jlprat</a></small>
+                </p>
+            </footer>
+        </section>
+        <section>
+            <blockquote>_insert here a quote about journeys_
+            <div class="author">Foo Bar</div></blockquote>
+        </section>
+        <section>
+            <h2>1. Where do we come from?</h2>
+            <h3>90's - 2000's</h3>
+        </section>
+        <section>
+            <img src="images/tim-berners-lee.jpg" alt="Sir Tim Berners-Lee">
+            <p class="fragment">Sir Tim Berners-Lee created the first WebPage: <a
+                    href="http://info.cern.ch/hypertext/WWW/TheProject.html">http://info.cern.ch/hypertext/WWW/TheProject.html</a></p>
+            <p class="fragment">... and it was responsive!</p>
+        </section>
+        <section>
+            <h3>WWW became popular</h3>
+            <ul>
+                <li class="fragment">Javascript was used to validate formulars</li>
+                <li class="fragment">Layouts were made with tables</li>
+                <li class="fragment">Websites were static (except for blink!)</li>
+                <li class="fragment">Animations were done with gifs</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Flash reign</h3>
+            <p>Whenever some dynamism was needed, Flash was used:</p>
+            <ul>
+                <li class="fragment">Video Players</li>
+                <li class="fragment">Games</li>
+                <li class="fragment">Even Websites!</li>
+            </ul>
+        </section>
+        <section>
+            <h3>HTML5 begins his journey</h3>
+            <p>It's late 2000's and HTML5 makes their first steps. However, it was not yet seen as a possible successor of Flash</p>
+        </section>
+        <section>
+            <h3>But then...</h3>
+        </section>
+        <section>
+            <h2>2. Present Time</h2>
+            <h3>The raise of HTML5</h3>
+        </section>
+        <section>
+            <p>Several events occurred that changed the 'Status Quo'</p>
+        </section>
+        <section>
+            <h3>Thoughts on Flash - Steve Jobs</h3>
+            <blockquote>"... we do not allow Flash on iPhones, iPods and iPads."</blockquote>
+        </section>
+        <section>
+            <h3>Major Browsers Support HTML5</h3>
+            <p>HTML5 major features are implemented in all major browsers</p>
+        </section>
+        <section>
+            <h3>Internet Everywhere</h3>
+            <p>Each household owns several devices that are able to browse the Internet</p>
+        </section>
+        <section>
+            <h3>Flash players kicked out of mobile devices</h3>
+            <p>Android stops having an official flash player</p>
+        </section>
+        <section>
+            <h3>Time for a change</h3>
+            <p>With all these changes, it was time to change the way we did websites</p>
+        </section>
+        <section>
+            <h3>Responsive Web Design</h3>
+            <p>A road full of challenges:</p>
+            <ul>
+                <li class="fragment">Same page, or different one?</li>
+                <li class="fragment">Responsive, or adaptive?</li>
+                <li class="fragment">PO - GFX - UX - Developer</li>
+                <li class="fragment">Subtle differences with browsers</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Games on HTML5</h3>
+            <p>Now it was possible to deliver a superior experience to any device with a browser in it</p>
+        </section>
+        <section>
+            <h3>Migration Time</h3>
+            <p>At GameDuell, one of the world's largest game communities, we started a journey that some years ago was unimaginable: port our games in HTML5</p>
+        </section>
+        <section>
+            <h3>That brought some questions</h3>
+            <ul>
+                <li class="fragment">DOM, Canvas or WebGL?</li>
+                <li class="fragment">Responsive Web Design applied to Games?</li>
+                <li class="fragment">Will it perform?</li></ul>
+        </section>
+        <section>
+            <h3>HTML5 Game Engines Popped Up</h3>
+            <p>bui</p>
+            <ul>
+                <li>Pixi.js</li>
+                <li>PlayCanvas</li>
+                <li>Unreal</li>
+            </ul>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+
+
+</script>
+
+</body>
+</html>
