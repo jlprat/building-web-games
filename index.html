@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Building Web Games - Glades and Shadows</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon; charset=binary">
+
+    <meta name="description"
+          content="This talk will focus on what we could achieve with HTML5 that was not doable some years ago, and at the same time what is still missing and can't be done with HTML5. All of this, in the area of Game Development for both Mobile and Desktop.">
+    <meta name="author" content="Josep Prat">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/gd.css"/>
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div id="gdSlides" class="reveal">
+
+    <div class="badge"></div>
+
+    <div class="slides">
+        <section>
+            <div class="logo"></div>
+            <h1 class="headline">Building Web Games</h1>
+            <h2>Glades and <span class="shadow">Shadows</span></h2>
+            <footer>
+                <p class="author">
+                    <small>Apps World | 2016/04/21 | Josep Prat | GameDuell GmbH | <a href="http://twitter.com/jlprat">@jlprat</a></small>
+                </p>
+            </footer>
+        </section>
+        <section>
+            <blockquote>"The journey of a thousand miles begins with a single step."
+            <div class="author">Lao Tzu</div></blockquote>
+        </section>
+        <section>
+            <h2>1. Origins</h2>
+            <h3>90's - 2000's</h3>
+        </section>
+        <section>
+            <img src="images/tim-berners-lee.jpg" alt="Sir Tim Berners-Lee">
+            <p class="fragment">Sir Tim Berners-Lee created the first WebPage: <a
+                    href="http://info.cern.ch/hypertext/WWW/TheProject.html">http://info.cern.ch/hypertext/WWW/TheProject.html</a></p>
+            <p class="fragment">... and it was responsive!</p>
+        </section>
+        <section>
+            <h3>WWW became popular</h3>
+            <ul>
+                <li class="fragment">Javascript was used to validate forms</li>
+                <li class="fragment">Layouts were made with tables</li>
+                <li class="fragment">Websites were static (except for <span class="blink">blink!</span>)</li>
+                <li class="fragment">Animations were done with gifs</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Mobile Gaming</h3>
+            <p>Native development was the preferred way to deliver games to mobile</p>
+        </section>
+        <section>
+            <h3>Mobile Browsing</h3>
+            <p>Browsing websites with a mobile was a tiny odyssey: text too small, or it didn't fit to the screen</p>
+        </section>
+        <section>
+            <h3>Flash reign</h3>
+            <p>Whenever some dynamism was needed, Flash was used:</p>
+            <ul>
+                <li class="fragment">Video Players</li>
+                <li class="fragment">Games</li>
+                <li class="fragment">Image Galleries</li>
+                <li class="fragment">Single Page Apps!</li>
+            </ul>
+        </section>
+        <section>
+            <h3>HTML5 begins his journey</h3>
+            <p>It's late 2000's and HTML5 makes their first steps. However, it was not yet seen as a possible successor for Flash</p>
+        </section>
+        <section>
+            <h3>But then...</h3>
+        </section>
+        <section>
+            <h2>2. Present Time</h2>
+            <h3>The raise of HTML5</h3>
+        </section>
+        <section>
+            <blockquote>
+                "Not all those who wander are lost."
+                <div>J.R.R. Tolkien</div>
+            </blockquote>
+        </section>
+        <section>
+            <h3>Thoughts on Flash - Steve Jobs</h3>
+            <blockquote>"... we do not allow Flash on iPhones, iPods and iPads."</blockquote>
+            <small><a href="todo" target="_blank">Full text</a></small>
+        </section>
+        <section>
+            <h3>Internet Everywhere</h3>
+            <p>Each household owns several devices that are able to browse the Internet</p>
+        </section>
+        <section>
+            <h3>Flash players kicked out of mobile devices</h3>
+            <p>Android stops having an official flash player</p>
+        </section>
+        <section>
+            <h3>Major Browsers Support HTML5</h3>
+            <p>But why is this so important?</p>
+        </section>
+        <section>
+            <h3>HTML5 - CSS3</h3>
+            <p>A new version of CSS is out, adding new interesting features:</p>
+            <ul>
+                <li class="fragment">Animations: Keyframes or Transform/Transition</li>
+                <li class="fragment">Round Borders</li>
+                <li class="fragment">Gradients</li>
+                <li class="fragment">Shadows</li>
+            </ul>
+        </section>
+        <section>
+            <h3>HTML5 - Canvas and webGL</h3>
+            <p>With the canvas element it was finally possible to replace Flash</p>
+        </section>
+        <section>
+            <h3>HTML5 - New API's</h3>
+            <p>A new set of API's were added</p>
+            <ul>
+                <li class="fragment">Local Storage</li>
+                <li class="fragment">GeoLocation</li>
+                <li class="fragment">DOM Queries</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Time for a change</h3>
+            <p>It was the time for HTML5 to get the web back</p>
+        </section>
+        <section>
+            <h3>RWD - It's about sizes</h3>
+            <p>Fixing web browsing on Mobile, a road full of challenges:</p>
+            <ul>
+                <li class="fragment">Same page, or different one?</li>
+                <li class="fragment">Responsive, or adaptive?</li>
+                <li class="fragment">PO - GFX - UX - Developer</li>
+                <li class="fragment">Subtle differences with browsers</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Games on HTML5</h3>
+            <p>Now it was possible to deliver a superior experience to any device with a browser in it</p>
+        </section>
+        <section>
+            <h3>Migration Time</h3>
+            <p>At GameDuell, one of the world's largest game communities, we started a journey that some years ago was unimaginable: port our games in HTML5</p>
+        </section>
+        <section>
+            <h3>That brought some questions</h3>
+            <ul>
+                <li class="fragment">DOM, Canvas or WebGL?</li>
+                <li class="fragment">Responsive Web Design applied to Games?</li>
+                <li class="fragment">Will it perform?</li></ul>
+        </section>
+        <section>
+            <h2>3. There are shadows&hellip;</h2>
+        </section>
+        <section>
+            <blockquote>"With great power comes great responsibility."
+                <div class="author">Uncle Ben - Spiderman</div>
+            </blockquote>
+        </section>
+        <section>
+            <h3>JavaScript</h3>
+            <p>Even if its usage is very widespread, it has some drawbacks:</p>
+            <ul>
+                <li class="fragment">No polymorphism</li>
+                <li class="fragment">No compiler to help out</li>
+                <li class="fragment">Single Threaded</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Javascript Ecosystem</h3>
+            <p>Because JavaScript would be nothing without it's frameworks and libraries</p>
+            <ul>
+                <li class="fragment">Unneeded libraries imported</li>
+                <li class="fragment">Too many libraries / frameworks that do the same</li>
+                <li class="fragment">Language to solve everything</li>
+                <li class="fragment">Increase of languages that compile / transpile to JS</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Security on Games</h3>
+            <p>Ensuring a fair experience to users, is crucial in Games</p>
+            <ul>
+                <li class="fragment">Easy for users to modify code</li>
+                <li class="fragment">No easy way to ensure requests are not modified by user</li>
+                <li class="fragment">Easy to sniff the network</li>
+                <li class="fragment">Obfuscation and minification is not security</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Lose against Native</h3>
+            <p>For the present time, we lose the comparison against native apps. The game is not over though</p>
+            <p>Native apps are still the preferred way for companies to communicate with users on mobile</p>
+        </section>
+        <section>
+            <h2>It's in our hands</h2>
+            <p>The journey is not over, we are responsible to provide better tools to deliver the best web experience overall</p>
+        </section>
+        <section>
+            <h1>Q & A</h1>
+        </section>
+        <section>
+            <h2>Further Information</h2>
+            <div><a href="http://inside.gameduell.com/">inside.gameduell.com</a></div>
+            <div><a href="http://www.techtalk-berlin.de/">www.techtalk-berlin.de</a></div>
+        </section>
+        <section>
+            <h2>Link to Slides</h2>
+            _insert QR code here_
+            <footer>
+                <p class="author">
+                    <small>Apps World | 2016/04/21 | Josep Prat | GameDuell GmbH | <a href="http://twitter.com/jlprat">@jlprat</a></small>
+                </p>
+            </footer>
+        </section>
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+
+
+</script>
+
+</body>
+</html>
